@@ -1,1 +1,5 @@
+com/examly/springapp/service/Apiservice.class
+com/examly/springapp/controller/FoodController.class
 com/examly/springapp/SpringappApplication.class
+com/examly/springapp/model/Food.class
+com/examly/springapp/repository/FoodRepo.class

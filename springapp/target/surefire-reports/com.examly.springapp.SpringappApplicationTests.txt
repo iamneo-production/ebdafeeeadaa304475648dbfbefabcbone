@@ -1,56 +1,44 @@
 -------------------------------------------------------------------------------
 Test set: com.examly.springapp.SpringappApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 13, Failures: 13, Errors: 0, Skipped: 0, Time elapsed: 4.471 s <<< FAILURE! - in com.examly.springapp.SpringappApplicationTests
-testrepositoryfolder  Time elapsed: 0.222 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-	at com.examly.springapp.SpringappApplicationTests.testrepositoryfolder(SpringappApplicationTests.java:142)
+Tests run: 13, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 5.79 s <<< FAILURE! - in com.examly.springapp.SpringappApplicationTests
+getname  Time elapsed: 0.159 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.examly.springapp.SpringappApplicationTests.getname(SpringappApplicationTests.java:68)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.examly.springapp.SpringappApplicationTests.getname(SpringappApplicationTests.java:68)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.examly.springapp.SpringappApplicationTests.getname(SpringappApplicationTests.java:68)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'test.Food' doesn't exist
+	at com.examly.springapp.SpringappApplicationTests.getname(SpringappApplicationTests.java:68)
 
-testModelFile  Time elapsed: 0.002 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-	at com.examly.springapp.SpringappApplicationTests.testModelFile(SpringappApplicationTests.java:130)
+get  Time elapsed: 0.009 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.examly.springapp.SpringappApplicationTests.get(SpringappApplicationTests.java:78)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.examly.springapp.SpringappApplicationTests.get(SpringappApplicationTests.java:78)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.examly.springapp.SpringappApplicationTests.get(SpringappApplicationTests.java:78)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'test.Food' doesn't exist
+	at com.examly.springapp.SpringappApplicationTests.get(SpringappApplicationTests.java:78)
 
-testModelFolder  Time elapsed: 0.002 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-	at com.examly.springapp.SpringappApplicationTests.testModelFolder(SpringappApplicationTests.java:118)
+getid  Time elapsed: 0.009 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.examly.springapp.SpringappApplicationTests.getid(SpringappApplicationTests.java:48)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.examly.springapp.SpringappApplicationTests.getid(SpringappApplicationTests.java:48)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.examly.springapp.SpringappApplicationTests.getid(SpringappApplicationTests.java:48)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'test.Food' doesn't exist
+	at com.examly.springapp.SpringappApplicationTests.getid(SpringappApplicationTests.java:48)
 
-testServiceFolder  Time elapsed: 0.002 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-	at com.examly.springapp.SpringappApplicationTests.testServiceFolder(SpringappApplicationTests.java:171)
-
-testrepositoryFile  Time elapsed: 0.002 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-	at com.examly.springapp.SpringappApplicationTests.testrepositoryFile(SpringappApplicationTests.java:158)
-
-getname  Time elapsed: 0.154 s  <<< FAILURE!
-java.lang.AssertionError: Status expected:<200> but was:<404>
-	at com.examly.springapp.SpringappApplicationTests.getname(SpringappApplicationTests.java:70)
-
-add  Time elapsed: 0.004 s  <<< FAILURE!
-java.lang.AssertionError: Status expected:<200> but was:<404>
-	at com.examly.springapp.SpringappApplicationTests.add(SpringappApplicationTests.java:38)
-
-get  Time elapsed: 0.005 s  <<< FAILURE!
-java.lang.AssertionError: Status expected:<200> but was:<404>
-	at com.examly.springapp.SpringappApplicationTests.get(SpringappApplicationTests.java:80)
-
-getid  Time elapsed: 0.004 s  <<< FAILURE!
-java.lang.AssertionError: Status expected:<200> but was:<404>
-	at com.examly.springapp.SpringappApplicationTests.getid(SpringappApplicationTests.java:50)
-
-getOrigin  Time elapsed: 0.005 s  <<< FAILURE!
-java.lang.AssertionError: Status expected:<200> but was:<404>
-	at com.examly.springapp.SpringappApplicationTests.getOrigin(SpringappApplicationTests.java:60)
-
-controllerfolder  Time elapsed: 0.002 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-	at com.examly.springapp.SpringappApplicationTests.controllerfolder(SpringappApplicationTests.java:93)
-
-testServieFile  Time elapsed: 0.002 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-	at com.examly.springapp.SpringappApplicationTests.testServieFile(SpringappApplicationTests.java:185)
-
-controllerfile  Time elapsed: 0.002 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-	at com.examly.springapp.SpringappApplicationTests.controllerfile(SpringappApplicationTests.java:105)
+getOrigin  Time elapsed: 0.008 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.examly.springapp.SpringappApplicationTests.getOrigin(SpringappApplicationTests.java:58)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.examly.springapp.SpringappApplicationTests.getOrigin(SpringappApplicationTests.java:58)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.examly.springapp.SpringappApplicationTests.getOrigin(SpringappApplicationTests.java:58)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'test.Food' doesn't exist
+	at com.examly.springapp.SpringappApplicationTests.getOrigin(SpringappApplicationTests.java:58)
 
